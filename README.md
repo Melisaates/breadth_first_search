@@ -27,7 +27,6 @@ Bu Python kodunu çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 5. `colors` sözlüğü, düğüm durumlarını belirlemek için renklerin RGB değerlerini içerir. Bu renkleri ihtiyaçlarınıza göre düzenleyebilirsiniz.
 6. Kodu çalıştırın ve BFS algoritmasının çıktısını gözlemleyin.
 
-> **Not:** Bu kod örneği, BFS algoritmasının adımlarını anlamak için kullanılabilir. Uygulama gerektiren farklı senaryolar için daha kapsamlı bir çözüm oluşturmanız gerekebilir.
 
 ## Örnek Çıktı
 
