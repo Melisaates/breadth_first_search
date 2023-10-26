@@ -1,39 +1,35 @@
-﻿# breadth_first_search_pythonn
+# breadth_first_search_pythonn
 
-# Breadth First Search (BFS) Algoritması
+# Breadth First Search (BFS) Algorithm
 
-Bu proje, Python dilinde Breadth First Search (BFS) algoritmasının bir örneğini içermektedir. Algoritma, bir graf üzerinde genişlik öncelikli arama gerçekleştirir.
+This project contains an example of the Breadth First Search (BFS) algorithm in the Python language. The algorithm performs a breadth-first search on a graph.
 
-## Algoritma Açıklaması
+## Algorithm Description
 
-- Proje, "black", "white" ve "gray" olmak üzere üç farklı renk kullanarak düğümlerin durumlarını belirtir.
-- BFS algoritmasının çalışması şu adımlarla özetlenebilir:
-    1. Başlangıç düğümü gri olarak işaretlenir ve kuyruğa eklenir.
-    2. Kuyruk boşalmadığı sürece aşağıdaki adımlar tekrarlanır:
-        - Kuyruktan bir düğüm çıkarılır ve üzerinde işlemler yapılır.
-        - Çıkarılan düğümün komşuları kontrol edilir.
-        - Komşular daha önce ziyaret edilmemişse gri olarak işaretlenir ve kuyruğa eklenir.
-        - İşlenen düğüm siyah olarak işaretlenir.
-    3. Tüm düğümler ziyaret edildiğinde BFS işlemi tamamlanır.
+- The project uses three different colors, "black," "white," and "gray," to indicate the states of nodes.
+- The working of the BFS algorithm can be summarized in the following steps:
+    1. The starting node is marked as gray and added to the queue.
+    2. As long as the queue is not empty, the following steps are repeated:
+        - A node is removed from the queue, and operations are performed on it.
+        - The neighbors of the removed node are checked.
+        - If neighbors have not been visited before, they are marked as gray and added to the queue.
+        - The processed node is marked as black.
+    3. When all nodes are visited, the BFS process is completed.
 
-## Kullanım
+## Usage
 
-Bu Python kodunu çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+To run this Python code, you can follow these steps:
 
-1. `math` modülünü projenize dahil edin. Bu modül, matematiksel işlemler için kullanılır.
-2. Kodu kopyalayın ve Python ortamında çalıştırın.
-3. Örnek graf yapısını değiştirmek için `G` değişkenini güncelleyebilirsiniz. Bu graf, anahtar-değer çiftleri kullanarak temsil edilmektedir. Anahtarlar düğümleri, değerler ise düğümlerin komşu düğümlerini temsil eder.
-4. `Point` sınıfı, düğüm nesnelerini tanımlamak için kullanılır. İhtiyaçlarınıza göre bu sınıfı özelleştirebilirsiniz.
-5. `colors` sözlüğü, düğüm durumlarını belirlemek için renklerin RGB değerlerini içerir. Bu renkleri ihtiyaçlarınıza göre düzenleyebilirsiniz.
-6. Kodu çalıştırın ve BFS algoritmasının çıktısını gözlemleyin.
+1. Include the `math` module in your project, which is used for mathematical operations.
+2. Copy the code and run it in a Python environment.
+3. You can update the `G` variable to change the example graph structure. This graph is represented using key-value pairs. Keys represent nodes, and values represent adjacent nodes.
+4. The `Point` class is used to define node objects. You can customize this class according to your needs.
+5. The `colors` dictionary contains RGB values of colors to determine the states of nodes. You can modify these colors to suit your requirements.
+6. Run the code and observe the output of the BFS algorithm.
 
-
-## Örnek Çıktı
+## Example Output
 
 Breadfirst:
 5 3 7 2 4 8
 
-
-Bu çıktı, BFS algoritmasının "5" düğümünden başlayarak genişlik öncelikli olarak diğer düğümleri ziyaret ettiğini gösterir.
-
----
+This output demonstrates that the BFS algorithm started from the "5" node and visited other nodes in a breadth-first manner.
